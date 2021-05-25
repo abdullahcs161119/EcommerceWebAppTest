@@ -7,27 +7,16 @@ import "../../styles/cart.scss";
 export const Cart = () => {
   const productsSelected = useSelector((state) => state.cart.cart_products);
   const history = useHistory();
-  // const [totalPrice, setTotalPrice] = useState(0);
   let totalPrice = 0;
   productsSelected.map((data) => {
     data.variants.map((data1) => {
       totalPrice = totalPrice + parseInt(data1.price);
-      //  return (myPrice += data.price);
     });
   });
   const handleMoreToBuy = () => {
     history.push("/dashboard");
   };
 
-  // useEffect(() => {
-
-  // }, []);
-
-  /* {productsSelected.map((data) => {
-              return data.variants.map((data) => {
-                return (myPrice += data.price);
-              });
-            })} */
   return (
     <section id="cart">
       <MyNavbar />

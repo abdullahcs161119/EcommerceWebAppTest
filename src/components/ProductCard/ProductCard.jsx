@@ -14,8 +14,6 @@ export const ProductCard = () => {
 
   const handleUsersFilter = debounce(async (query) => {
     setFilteredData([]);
-
-    console.log(query.target.value);
     const q = query.target.value.toLowerCase();
     const newUsers = await Products.filter((c) =>
       c.title.toLowerCase().includes(q)

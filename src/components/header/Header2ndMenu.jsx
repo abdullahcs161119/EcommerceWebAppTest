@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 import { logout } from "../../services/userSlice";
 import { useDispatch } from "react-redux";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -23,7 +22,6 @@ export const Header2ndMenu = () => {
   ]);
 
   const userToken = useSelector((state) => state.user.token);
-  console.log(userToken);
   return (
     <Nav>
       {state.map((item, i) =>
