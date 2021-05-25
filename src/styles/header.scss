@@ -1,0 +1,19 @@
+.my-header-wrapper {
+  padding: 1rem 10rem !important;
+  background-color: #e0e1e4;
+
+  z-index: 1;
+  height: 75px;
+}
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  //  background-color: #fff;
+}
+.mylinkswrapper {
+  color: #000 !important;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0px 15px !important;
+}

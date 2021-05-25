@@ -1,0 +1,11 @@
+//
+#product_Card {
+  padding: 2rem;
+
+  .cards_div {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}

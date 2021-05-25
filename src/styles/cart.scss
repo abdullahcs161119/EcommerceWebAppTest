@@ -1,0 +1,15 @@
+#cart {
+  .cards_div {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .main_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3rem;
+  }
+}
